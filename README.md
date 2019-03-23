@@ -8,7 +8,16 @@
             <code> php bin/console doctrine:database:create</code>
          </li>
     <li>
+        <code> php bin/console make:migration</code>
+     </li>
+     <li>
+        <code> php bin/console doctrine:migrations:migrate</code>
+     </li>
+     <li>
         <code> php bin/console doctrine:fixtures:load</code>
-     </li></ul>
+     </li>
+     <li>
+        <code> php bin/console server:run</code>
+          </li></ul>
     </li>
    </ol>
