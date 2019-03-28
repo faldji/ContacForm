@@ -91,6 +91,15 @@ class Department
         return $this;
     }
 
+    public function getEmails()
+    {
+        $emails = ($this->getEmail2() != null)?[
+            $this->email1,
+            $this->email2
+        ]:$this->email1;
+        return $emails;
+    }
+
     /**
      * @return Collection|User[]
      */

@@ -29,6 +29,8 @@ class MessageType extends AbstractType
     {
         $resolver->setDefaults([
             'data_class' => User::class,
+            'empty_data' => function () {
+                return new User();},
         ]);
     }
 }

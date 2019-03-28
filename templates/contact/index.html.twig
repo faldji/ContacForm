@@ -10,35 +10,74 @@
                 {{ form_start(contactForm) }}
                 <div class="form-group">
                     {{ form_label(contactForm.name) }}
-                    {{ form_widget(contactForm.name,{'attr':{'class':'form-control','placeholder':'Enter your name'}}) }}
+                    {{ form_widget(contactForm.name,
+                        {
+                            'attr':
+                            {
+                                'class':'form-control',
+                                'placeholder':'Enter your name'
+                            }
+                        })
+                    }}
                     <div class="text-danger">
                         {{ form_errors(contactForm.name) }}
                     </div>
                 </div>
                 <div class="form-group">
                     {{ form_label(contactForm.surname) }}
-                    {{ form_widget(contactForm.surname,{'attr':{'class':'form-control','placeholder':'Enter your surname'}}) }}
+                    {{ form_widget(contactForm.surname,
+                        {
+                            'attr':
+                            {
+                                'class':'form-control',
+                                'placeholder':'Enter your surname'
+                            }
+                        })
+                    }}
                     <div class="text-danger">
                         {{ form_errors(contactForm.surname) }}
                     </div>
                 </div>
                 <div class="form-group">
                     {{ form_label(contactForm.email) }}
-                    {{ form_widget(contactForm.email,{'attr':{'class':'form-control','placeholder':'Enter your email'}}) }}
+                    {{ form_widget(contactForm.email,
+                        {
+                            'attr':
+                            {
+                                'class':'form-control',
+                                'placeholder':'Enter your email'
+                            }
+                        })
+                    }}
                     <div class="text-danger">
                         {{ form_errors(contactForm.email) }}
                     </div>
                 </div>
                 <div class="form-group">
                     {{ form_label(contactForm.destination,'Destination') }}
-                    {{ form_widget(contactForm.destination,{'attr':{'class':'form-control'}}) }}
+                    {{ form_widget(contactForm.destination,
+                        {
+                            'attr':
+                            {
+                                'class':'form-control'
+                            }
+                        })
+                    }}
                     <div class="text-danger">
                         {{ form_errors(contactForm.destination) }}
                     </div>
                 </div>
                 <div class="form-group">
                     {{ form_label(contactForm.message) }}
-                    {{ form_widget(contactForm.message,{'attr':{'class':'form-control','placeholder':'Your message here...'}}) }}
+                    {{ form_widget(contactForm.message,
+                        {
+                            'attr':
+                            {
+                                'class':'form-control',
+                                'placeholder':'Your message here...'
+                            }
+                        })
+                    }}
                     <div class="text-danger">
                         {{ form_errors(contactForm.message) }}
                     </div>
