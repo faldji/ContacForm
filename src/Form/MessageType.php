@@ -20,7 +20,14 @@ class MessageType extends AbstractType
             ->add('name')
             ->add('surname', TextType::class, ['required'=>false])
             ->add('email', EmailType::class)
-            ->add('destination', EntityType::class, ['class'=>Department::class,'choice_label'=>'name'])
+            ->add(
+                'destination',
+                EntityType::class,
+                [
+                    'class'=>Department::class,
+                    'choice_label'=>'name'
+                ]
+            )
             ->add('message', TextareaType::class)
         ;
     }
