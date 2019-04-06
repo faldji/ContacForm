@@ -18,10 +18,10 @@ class MessageType extends AbstractType
     {
         $builder
             ->add('name')
-            ->add('surname',TextType::class,['required'=>false])
-            ->add('email',EmailType::class)
-            ->add('destination',EntityType::class,['class'=>Department::class,'choice_label'=>'name'])
-            ->add('message',TextareaType::class)
+            ->add('surname', TextType::class, ['required'=>false])
+            ->add('email', EmailType::class)
+            ->add('destination', EntityType::class, ['class'=>Department::class,'choice_label'=>'name'])
+            ->add('message', TextareaType::class)
         ;
     }
 
@@ -30,7 +30,8 @@ class MessageType extends AbstractType
         $resolver->setDefaults([
             'data_class' => User::class,
             'empty_data' => function () {
-                return new User();},
+                return new User();
+            },
         ]);
     }
 }
