@@ -36,6 +36,7 @@ class MessageType extends AbstractType
     {
         $resolver->setDefaults([
             'data_class' => User::class,
+            'csrf_protection'    => false,
             'empty_data' => function () {
                 return new User();
             },
